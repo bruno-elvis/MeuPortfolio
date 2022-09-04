@@ -61,7 +61,7 @@ font-weight: 400;
 line-height: 1.5;
 color: #6c757d;
 text-align: left;
-background-color: #ffffff;
+background-color: #000000;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -424,6 +424,7 @@ font-weight: 300;
 font-size: 10rem;
 font-weight: 300;
 line-height: 1.2;
+font-weight: 900 !important;
 }
 
 @media (max-width: 1200px) {
@@ -2666,18 +2667,19 @@ box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
 .btn-outline-primary {
-color: #0BCEAF;
-border-color: #0BCEAF;
+color: #fff;
+border-color: #fff;
 }
 
 .btn-outline-primary:hover {
-color: #fff;
-background-color: #0BCEAF;
-border-color: #0BCEAF;
+color: #000;
+background-color: #fff;
+border-color: #222;
+text-shadow: 0 0 1px black;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.5);
+box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -6355,7 +6357,7 @@ vertical-align: text-top !important;
 }
 
 .bg-primary {
-background-color: #0BCEAF !important;
+background-color: #222222 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6415,7 +6417,7 @@ background-color: #bd2130 !important;
 }
 
 .bg-light {
-background-color: #ffffff !important;
+background-color: #000 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -6483,7 +6485,7 @@ border-left: 0 !important;
 }
 
 .border-primary {
-border-color: #0BCEAF !important;
+border-color: #fff !important;
 }
 
 .border-secondary {
@@ -7443,6 +7445,7 @@ position: relative !important;
 
 .position-absolute {
 position: absolute !important;
+text-shadow: 13px 13px 8px black;
 }
 
 .position-fixed {
@@ -9521,11 +9524,11 @@ font-style: italic !important;
 }
 
 .text-white {
-color: #fff !important;
+color: #222 !important;
 }
 
 .text-primary {
-color: #0BCEAF !important;
+color: #fff !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9713,11 +9716,6 @@ body {
 }
 
 /********** Template CSS ************/
-h1,
-.font-weight-bolder {
-font-weight: 900 !important;
-}
-
 h2,
 h3,
 .font-weight-bold {
@@ -9803,7 +9801,7 @@ outline: none;
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-color: #0BCEAF;
+color: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -9974,7 +9972,7 @@ flex-direction: column;
 top: calc(50% - 30px);
 left: calc(50% - 30px);
 border-radius: 60px;
-background: #0BCEAF;
+background: #fff;
 }
 
 .contact-form .help-block ul {
