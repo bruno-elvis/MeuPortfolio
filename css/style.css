@@ -9814,7 +9814,7 @@ font-size: 45px;
 color: #ffffff;
 }
 
-.btn-play {
+.btn-repo {
 position: relative;
 display: block;
 box-sizing: content-box;
@@ -9826,7 +9826,7 @@ outline: none !important;
 padding: 18px 20px 20px 28px;
 }
 
-.btn-play:before {
+.btn-repo:before {
 content: "";
 position: absolute;
 z-index: 0;
@@ -9841,7 +9841,7 @@ border-radius: 100%;
 animation: pulse-border 1500ms ease-out infinite;
 }
 
-.btn-play:after {
+.btn-repo:after {
 content: "";
 position: absolute;
 z-index: 1;
@@ -9856,7 +9856,7 @@ border-radius: 100%;
 transition: all 200ms;
 }
 
-.btn-play span {
+.btn-repo  {
 display: block;
 position: relative;
 z-index: 3;
