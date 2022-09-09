@@ -5706,7 +5706,6 @@ a.badge-dark.focus {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #0BCEAF;
     transition: width 0.6s ease;
 }
 
@@ -11103,7 +11102,7 @@ h6,
 .progress .progress-bar {
     width: 0px;
     border-radius: 10px;
-    transition: 2s;
+    transition: 3s;
 }
 
 .service-icon {
