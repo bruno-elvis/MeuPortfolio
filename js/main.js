@@ -58,8 +58,21 @@
         } else if ($(this).scrollTop() >= 3545){
             itensNavBar.forEach(function(a) {(a.classList.contains('active')) && a.classList.remove('active');});
             secaoContato.classList.add('active');
-        }
+        };
     });
+
+    const botaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a');
+    const imgBotaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a > img');
+
+    botaoContatar.addEventListener('mouseover', function () {
+        (imgBotaoContatar.style.filter) && imgBotaoContatar.style.removeProperty('filter');
+    });
+
+    botaoContatar.addEventListener('mouseout', function () {
+        if (!imgBotaoContatar.style.filter) imgBotaoContatar.style.filter = 'invert()';
+    });
+
+    
     
 })(jQuery);
 
