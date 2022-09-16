@@ -61,6 +61,7 @@
         };
     });
 
+    // Efeito no botão contatar, contraste com icone do whatsapp
     const botaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a');
     const imgBotaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a > img');
 
@@ -72,7 +73,13 @@
         if (!imgBotaoContatar.style.filter) imgBotaoContatar.style.filter = 'invert()';
     });
 
-    
+    // Evento do botão de ler mais na seção 'sobre'
+    const botaoLerMais = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > a:nth-child(5)');
+    const paragrafo = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > p');
+
+    botaoLerMais.addEventListener('click', function () {
+        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Sou criativo, automotivado, aprendo com facilidade, muito organizado, além da alta capacidade de adaptação ao ambiente e resiliência. Penso que os melhores resultados, independente do projeto, descendem da dedicação e motivação do colaborador, alinhado aos interesses mútuos, os meus tem base na voracidade de aprender e fascínio em transformar informação em valor através da tecnologia. Tenho 1+ ano de experiência como desenvolvedor Full Stack (Java + HTML5, CSS3, JavaScript,  Node.js, dentre outras tecnologias), tenho facilidade em trabalhar com a Stack JavaScript (no backend e no frontend) e caminho para dominar os principais frameworks nos próximos anos aplicando em projetos próprios.';
+    });
     
 })(jQuery);
 
