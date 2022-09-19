@@ -64,6 +64,7 @@
     // Efeito no botão contatar, contraste com icone do whatsapp
     const botaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a');
     const imgBotaoContatar = document.querySelector('#navbarCollapse > div:nth-child(2) > a > img');
+    const botaoDownloadCurriculo = document.querySelector('#home > div > div > div.col-lg-7.text-center.text-lg-left > div.d-flex.align-items-center.justify-content-center.justify-content-lg-start > a.btn.btn-outline-light.mr-5');
 
     botaoContatar.addEventListener('mouseover', function () {
         (imgBotaoContatar.style.filter) && imgBotaoContatar.style.removeProperty('filter');
@@ -79,6 +80,20 @@
 
     botaoLerMais.addEventListener('click', function () {
         if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Sou criativo, automotivado, aprendo com facilidade, muito organizado, além da alta capacidade de adaptação ao ambiente e resiliência. Penso que os melhores resultados, independente do projeto, descendem da dedicação e motivação do colaborador, alinhado aos interesses mútuos, os meus tem base na voracidade de aprender e fascínio em transformar informação em valor através da tecnologia. Tenho 1+ ano de experiência como desenvolvedor Full Stack (Java + HTML5, CSS3, JavaScript,  Node.js, dentre outras tecnologias), tenho facilidade em trabalhar com a Stack JavaScript (no backend e no frontend) e caminho para dominar os principais frameworks nos próximos anos aplicando em projetos próprios.';
+    });
+
+    // Integração com API externa para registro de número de downloads do arquivo
+    botaoDownloadCurriculo.addEventListener('click', async function () {
+        //GET
+        const consultaAPI = await fetch(`https://api-down-count-rest-node.herokuapp.com/`);
+        const respostaAPI = await consultaAPI.json();
+        console.log(`Resposta GET: \n ${await JSON.stringify(respostaAPI)}`);
+
+        //PUT
+        const putCountAPI = await fetch('https://api-down-count-rest-node.herokuapp.com/', { method: 'PUT', headers: { 'Content-Type': 'application/json'}});
+        const resPutAPI = await putCountAPI.json();
+        console.log(`Resposta PUT: \n ${await JSON.stringify(resPutAPI)}`);
+
     });
     
 })(jQuery);
