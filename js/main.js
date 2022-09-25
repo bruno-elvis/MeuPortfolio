@@ -85,14 +85,14 @@
     // Integração com API externa para registro de número de downloads do arquivo
     botaoDownloadCurriculo.addEventListener('click', async function () {
         //GET
-        const consultaAPI = await fetch(`https://api-down-count-rest-node.herokuapp.com/`);
+        const consultaAPI = await fetch(`https://sequelize-crud-postgresql.herokuapp.com/counts`);
         const respostaAPI = await consultaAPI.json();
-        console.log(`Resposta GET: \n ${await JSON.stringify(respostaAPI)}`);
+        console.log(`Resposta GET: \n Contador: ${await JSON.stringify(respostaAPI)}`);
 
         //PUT
-        const putCountAPI = await fetch('https://api-down-count-rest-node.herokuapp.com/', { method: 'PUT', headers: { 'Content-Type': 'application/json'}});
-        const resPutAPI = await putCountAPI.json();
-        console.log(`Resposta PUT: \n ${await JSON.stringify(resPutAPI)}`);
+        const postCountAPI = await fetch('https://sequelize-crud-postgresql.herokuapp.com/incrementcount', { method: 'POST', headers: { 'Content-Type': 'application/json'}});
+        const resPostAPI = await postCountAPI.json();
+        console.log(`Resposta PUT: \n ${await JSON.stringify(resPostAPI)}`);
 
     });
     
