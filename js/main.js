@@ -87,14 +87,22 @@
         //GET
         const consultaAPI = await fetch(`https://sequelize-crud-postgresql.herokuapp.com/counts`);
         const respostaAPI = await consultaAPI.json();
-        console.log(`Resposta GET: \n Contador: ${await JSON.stringify(respostaAPI)}`);
+        console.log(`Resposta GET: \n Contador: ${ await JSON.stringify(respostaAPI) }`);
 
         //PUT
         const postCountAPI = await fetch('https://sequelize-crud-postgresql.herokuapp.com/incrementcount', { method: 'POST', headers: { 'Content-Type': 'application/json'}});
         const resPostAPI = await postCountAPI.json();
-        console.log(`Resposta PUT: \n ${await JSON.stringify(resPostAPI)}`);
+        console.log(`Resposta PUT: \n ${ await JSON.stringify(resPostAPI) }`);
 
     });
+
+    // Apresentar count ao iniciar page
+    (async () => {
+        const consultaAPI = await fetch(`https://sequelize-crud-postgresql.herokuapp.com/counts`);
+        const respostaAPI = await consultaAPI.json();
+        console.log(`Resposta GET: \n Contador: ${ await JSON.stringify(respostaAPI)}`);
+
+    })();
     
 })(jQuery);
 
