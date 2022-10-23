@@ -459,16 +459,16 @@ h6,
 }
 
 .display-1 {
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 300;
     line-height: 1.2;
     font-weight: 900 !important;
     color: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .display-1 {
-        font-size: calc(2.125rem + 10.5vw);
+        font-size: calc(2.125rem + 2vw);
     }
 }
 
