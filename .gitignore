@@ -24,5 +24,6 @@ hs_err_pid*
 
 .vscode/
 .other/
+.git/
 ssh_key_git
 ssh_key_git.pub
