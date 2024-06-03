@@ -1,12 +1,14 @@
 ;(function ($) {
     "use strict";
+    const currentPage = window.location.href;
 
     // Scrolling da Navbar e dinamica do botão voltar ao inicio "back to top"
     $(window).scroll(function () {
+
         if ($(this).scrollTop() > 200) {
             $('.navbar').fadeIn('slow').css('display', 'flex');
             $('.back-to-top').fadeIn('slow');
-        } else {
+        } else if ($(this).scrollTop() > 200 && currentPage.indexOf('conteudo') < 0) {
             $('.navbar').fadeOut('slow').css('display', 'none');
             $('.back-to-top').fadeOut('slow');
         };
@@ -78,12 +80,12 @@
     const botaoLerMais = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > a:nth-child(5)');
     const paragrafo = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > p');
 
-    botaoLerMais.addEventListener('click', function () {
+    if (currentPage.indexOf('index') > 0) botaoLerMais.addEventListener('click', function () {
         if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, facilidade no aprendizado, resiliente para situações e ambientes diversos. Penso que os melhores resultados, independente do projeto, descendem da dedicação e motivação do colaborador, através do alinhamento de ideias e interesses, os meus tem base na voracidade de aprender e fascínio em transformar informação em valor através da tecnologia. Tenho 1+ ano de experiência como desenvolvedor FullStack, com sólidos conhecimentos na linguagem JavaScript, caminho para dominar os principais frameworks da Stack nos próximos meses, aplicando em projetos próprios e cursos de especialização. Atualmente participo de Bootcamps, cursos de especialização na área de Desenvolvimento de Software e sigo ativo na comunidade, a fim de validar meus conhecimentos e melhorar metodologias de desenvolvimento em meus trabalhos.';
     });
 
     // Integração com API externa para registro de número de downloads do arquivo
-    botaoDownloadCurriculo.addEventListener('click', async function () {
+    if (currentPage.indexOf('index') > 0) botaoDownloadCurriculo.addEventListener('click', async function () {
         //GET
         const consultaAPI = await fetch(`https://sequelize-crud-postgresql.herokuapp.com/counts`);
         const respostaAPI = await consultaAPI.json();
@@ -97,12 +99,65 @@
     });
 
     // Apresentar count ao iniciar page
-    (async () => {
+    /*(async () => {
         const consultaAPI = await fetch(`https://sequelize-crud-postgresql.herokuapp.com/counts`);
         const respostaAPI = await consultaAPI.json();
         console.log(`Resposta GET: \n Contador: ${ await JSON.stringify(respostaAPI)}`);
 
-    })();
+    })();*/
+
+    // Popular lista de blogs recentes
+
+    const listPosts = [
+        {
+            day: '31',
+            month: 'MAI',
+            title: 'Docker e suas vantagens',
+            img: 'img/post_docker.png'
+
+        },
+        {
+            day: '03',
+            month: 'JUN',
+            title: 'Implementação de modelos de I.A (SLM) via API',
+            img: 'img/post_ia.png'
+
+        },
+        {
+            day: '03',
+            month: 'JUN',
+            title: 'Novidades sobre React 18',
+            img: 'img/post_react.png'
+
+        }
+
+    ];
+
+    const listPotsDay = document.querySelectorAll('#conteudo .col-lg-4.mb-5 h4');
+    const listPostMonth = document.querySelectorAll('#conteudo .col-lg-4.mb-5 small');
+    const listPostTitle = document.querySelectorAll('#conteudo .col-lg-4.mb-5 h5');
+    const listPostImg = document.querySelectorAll('#conteudo .col-lg-4.mb-5 img');
+
+    function setPost(listPostElement, labelType){
+        listPostElement.forEach((postElement, i) => {
+            switch (i) {
+            case 0:
+                (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
+                break;
+            case 1:
+                (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
+            case 2:
+                (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
+                break;
+            };
+    
+        });
+    };
+
+    setPost(listPotsDay, 'day');
+    setPost(listPostMonth, 'month');
+    setPost(listPostTitle, 'title');
+    setPost(listPostImg, 'img');
     
 })(jQuery);
 
