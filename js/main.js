@@ -212,6 +212,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let idPost = localStorage.getItem('post');
 
-    document.getElementById('conteudo').innerHTML = JSON.parse(localStorage.getItem('posts'))[idPost];
+    if (document.location.href.indexOf('conteudo') > 0) document.getElementById('conteudo').innerHTML = JSON.parse(localStorage.getItem('posts'))[idPost];
 
 });
