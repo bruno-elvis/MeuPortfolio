@@ -100,6 +100,8 @@
     
 })(jQuery);
 
+localStorage.setItem('post', 'main');
+
 //Definir conteúdo dos posts
 localStorage.setItem('posts', JSON.stringify({
     1: `<h2 style="color: blue;">Docker e suas vantagens</h2>
