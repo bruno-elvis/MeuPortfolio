@@ -27,3 +27,4 @@ hs_err_pid*
 .git/
 ssh_key_git
 ssh_key_git.pub
+*.Identifier
