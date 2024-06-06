@@ -100,7 +100,7 @@
     
 })(jQuery);
 
-localStorage.setItem('post', 'main');
+if (localStorage.getItem('post') === 'main' || (localStorage.getItem('post') === null)) localStorage.setItem('post', 'main');
 
 //Definir conteúdo dos posts
 localStorage.setItem('posts', JSON.stringify({
