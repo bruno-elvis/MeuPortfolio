@@ -239,7 +239,7 @@ function createMain(){
                     <div class="typed-text d-none">Designer para WEB, Desenvolvedor WEB, Desenvolvedor Full Stack</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start" style="padding-top: 1rem !important;">
                         <a href="arquivo/CurriculoBrunoEPSilva.pdf" class="btn btn-outline-light mr-5" download>Download Currículo</a>
-                        <a class="btn-repo" href="https://github.com/Bruno-Elvis" target="_blank">
+                        <a class="btn-repo" href="https://github.com/bruno-elvis" target="_blank">
                             <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="github"
                                 style="
                                     height: 50px;
@@ -326,7 +326,7 @@ function createMain(){
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Desenvolvedor WEB Full Stack</h5>
-                            <p class="mb-2"><strong>Hinno Technology</strong> | <small>jul. 2021 - mai. 2024</small></p>
+                            <p class="mb-2"><strong>Hinno Technology</strong> | <small>jul. 2021 - jul. 2024</small></p>
                             <p>Desenvolvimento de aplicações WEB Multiplataforma na Área de Saúde</p>
                         </div>
                         <div class="position-relative mb-4">
@@ -531,7 +531,7 @@ function createMain(){
     const paragrafo = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > p');
 
     botaoLerMais?.addEventListener('click', function () {
-        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, facilidade no aprendizado, resiliente para situações e ambientes diversos. Penso que os melhores resultados, independente do projeto, descendem da dedicação e motivação do colaborador, através do alinhamento de ideias e interesses, os meus tem base na voracidade de aprender e fascínio em transformar informação em valor através da tecnologia. Tenho 1+ ano de experiência como desenvolvedor FullStack, com sólidos conhecimentos na linguagem JavaScript, caminho para dominar os principais frameworks da Stack nos próximos meses, aplicando em projetos próprios e cursos de especialização. Atualmente participo de Bootcamps, cursos de especialização na área de Desenvolvimento de Software e sigo ativo na comunidade, a fim de validar meus conhecimentos e melhorar metodologias de desenvolvimento em meus trabalhos.';
+        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, tenho autonomia no aprendizado, resiliente para situações e ambientes diversos. Tenho voracidade de aprender e fascínio em transformar informação em valor através da tecnologia.   Com mais de 3 anos de experiência com desenvolvimento FullStack na área da saúde, trabalhei com projetos WEB, Desktop e Mobile em todo o ciclo de vida do projeto, desde o desenvolvimento até o deploy, atendendo clientes de referência internacional na América Latina, do setor público e privado. Possuo sólidos conhecimentos na linguagem JavaScript e seu ecossistema, assim como Java e banco de dados relacionais.  Sigo ativo nas comunidades tech, e desenvolvo projeto pessoal na área de gestão de manutenção de motocicletas.';
     });
 
     createBlogPosts();
