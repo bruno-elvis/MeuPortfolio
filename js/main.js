@@ -267,7 +267,7 @@ function createMain(){
                     <img class="img-fluid rounded w-100" src="img/about.png" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Desenvolvedor WEB</h3>
+                    <h3 class="mb-4">Desenvolvedor WEB Full-Stack</h3>
                     <p>...</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2">
@@ -281,9 +281,6 @@ function createMain(){
                         </div>
                         <div class="col-sm-6 py-2">
                             <h6>Tempo de Experiência: <span class="text-secondary">+3 Anos</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Tel:. <span class="text-secondary">+055 028 999 522 013</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
                             <h6>E-mail: <span class="text-secondary">brunoelvis@outlook.com.br</span></h6>
@@ -345,82 +342,6 @@ function createMain(){
                             <p class="mb-2"><strong>Usimed Sul Capixaba Cooperativa de Usuários de Assistência
                                     Médica</strong> | <small>2017 - 2019</small></p>
                             <p>Manutenção de Banco de Dados e Suporte a Sistemas</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Seção de Habilidades Técnicas-->
-    <div class="container-fluid py-5" id="habilidades">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase">Habilidades</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Minhas Habilidades Técnicas</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">99%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="99" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JavaScript</h6>
-                            <h6 class="font-weight-bold">99%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="99" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Node.js</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Java</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">99%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="99" aria-valuemin="0"
-                                aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
