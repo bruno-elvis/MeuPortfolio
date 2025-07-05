@@ -279,7 +279,7 @@ function createMain(){
                             <h6>Formação: <span class="text-secondary">Bacharel em Sistemas de Informação</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
-                            <h6>Tempo de Experiência: <span class="text-secondary">+3 Anos</span></h6>
+                            <h6>Tempo de Experiência: <span class="text-secondary">+5 Anos</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
                             <h6>E-mail: <span class="text-secondary">brunoelvis@outlook.com.br</span></h6>
@@ -318,6 +318,13 @@ function createMain(){
                 <div class="col-lg-6">
                     <h3 class="mb-4">Minhas Experiências</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Desenvolvedor WEB Full Cycle</h5>
+                            <p class="mb-2"><strong>Defensoria Pública do Estado do Espírito Santo</strong> | <small>ago. 2024 - até o momento</small></p>
+                            <p>Desenvolvimento de aplicações WEB, sustentação e manutenção de integrações e sistemas internos baseadas no ecossistema Python</p>
+                        </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
