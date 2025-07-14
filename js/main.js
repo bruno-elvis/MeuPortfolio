@@ -135,7 +135,18 @@ localStorage.setItem('posts', JSON.stringify({
     </p>
     <p style="font-size: 16px; line-height: 1.6; color: #666;">
         Essas são apenas algumas das novidades do React 18. Para mais detalhes, confira a <a href="https://pt-br.legacy.reactjs.org/blog/2022/03/29/react-v18.html" style="color: #1678c2; text-decoration: none;">documentação oficial</a>.
-    </p>`
+    </p>`,
+
+    4: `<h2 style='color: #1678c2;'>O que são servidores MCP?</h2>
+    <p>Servidores MCP (Model Context Protocol) são uma arquitetura moderna voltada para a integração e comunicação eficiente entre diferentes sistemas, especialmente em ambientes que utilizam inteligência artificial e machine learning.</p>
+    <ul>
+        <li><strong>Padronização:</strong> O MCP define um protocolo para troca de informações entre modelos, aplicações e serviços, facilitando interoperabilidade.</li>
+        <li><strong>Escalabilidade:</strong> Servidores MCP permitem que múltiplos modelos sejam gerenciados e acessados de forma centralizada, otimizando recursos e desempenho.</li>
+        <li><strong>Segurança:</strong> O protocolo inclui mecanismos para autenticação, autorização e controle de acesso, tornando a comunicação entre sistemas mais segura.</li>
+        <li><strong>Flexibilidade:</strong> É possível integrar diferentes tipos de modelos (IA, ML, estatísticos) e aplicações, tornando o MCP ideal para ambientes híbridos.</li>
+    </ul>
+    <p>Em resumo, servidores MCP são fundamentais para projetos que exigem integração ágil e segura entre múltiplos modelos e sistemas, promovendo inovação e eficiência.</p>
+    <img src="img/post_mcp.png" alt="Servidor MCP" style="width: 200px; height: auto;">`,
 
 }));
 
@@ -175,10 +186,17 @@ function createBlogPosts() {
 
         },
         {
-            day: '03',
+            day: '15',
             month: 'JUN',
             title: 'Novidades sobre React 18',
             img: 'img/post_react.png'
+
+        },
+        {
+            day: '12',
+            month: 'JUL',
+            title: 'O que são servidores MCP?',
+            img: 'img/post_mcp.png'
 
         }
 
@@ -201,6 +219,13 @@ function createBlogPosts() {
             case 2:
                 (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
                 break;
+            case 3:
+                (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
+                break;
+            case 4:
+                (labelType !== 'img') ? postElement.textContent = listPosts[i][labelType] : postElement.setAttribute('src', listPosts[i][labelType]);
+                break;
+
             };
     
         });
@@ -396,6 +421,17 @@ function createMain(){
                     <h5 class="font-weight-medium mb-4">Este espaço receberá novidades em breve</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="">Ler mais</a>
                 </div>
+                <div id="4" class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Este espaço receberá novidades em breve</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Ler mais</a>
+                </div>
             </div>
         </div>
     </div>
@@ -458,7 +494,7 @@ function createMain(){
     const paragrafo = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > p');
 
     botaoLerMais?.addEventListener('click', function () {
-        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, tenho autonomia no aprendizado, resiliente para situações e ambientes diversos. Tenho voracidade de aprender e fascínio em transformar informação em valor através da tecnologia.   Com mais de 3 anos de experiência com desenvolvimento FullStack na área da saúde, trabalhei com projetos WEB, Desktop e Mobile em todo o ciclo de vida do projeto, desde o desenvolvimento até o deploy, atendendo clientes de referência internacional na América Latina, do setor público e privado. Possuo sólidos conhecimentos na linguagem JavaScript e seu ecossistema, assim como Java e banco de dados relacionais.  Sigo ativo nas comunidades tech, e desenvolvo projeto pessoal na área de gestão de manutenção de motocicletas.';
+        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, tenho autonomia no aprendizado, resiliente para situações e ambientes diversos. Tenho voracidade de aprender e fascínio em transformar informação em valor através da tecnologia.   Com mais de 5 anos de experiência com desenvolvimento FullStack na área da saúde e jurídica, trabalhei com projetos WEB, Desktop e Mobile em todo o ciclo de vida do projeto, desde o requisito de projeto ao deploy, atendendo clientes de referência internacional na América Latina, do setor público e privado. Possuo sólidos conhecimentos na linguagem JavaScript e seu ecossistema, assim como Java, Python e banco de dados relacionais e não relacionais.  Sigo ativo nas comunidades tech, e desenvolvo projeto pessoal na área de gestão de manutenção de motocicletas com aplicação de implementações com IA (SLM).';
     });
 
     createBlogPosts();
@@ -498,6 +534,16 @@ function createPostBlog(){
                     <a class="btn btn-sm btn-outline-primary py-2" href="">Ler mais</a>
                 </div>
                 <div id= "3" class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Este espaço receberá novidades em breve</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Ler mais</a>
+                </div>
+                <div id= "4" class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1">01</h4>
