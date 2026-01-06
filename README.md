@@ -13,5 +13,5 @@ Link para acesso: https://bruno-elvis.github.io/MeuPortfolio/
 
 
 :construction: Projeto em construção :construction:
-![Preview da Page](https://user-images.githubusercontent.com/50249992/188998559-10a03952-86c8-4d51-add6-c9d22d420ee8.png)
+![Preview da Page](<img width="1322" height="798" alt="image" src="https://github.com/user-attachments/assets/2ea7b988-87c0-485c-a86d-f80e5aed61d2" />)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
