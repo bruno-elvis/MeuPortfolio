@@ -356,7 +356,7 @@ function createMain(){
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Desenvolvedor WEB Full Cycle</h5>
-                            <p class="mb-2"><strong>Defensoria Pública do Estado do Espírito Santo</strong> | <small>ago. 2024 - até o momento</small></p>
+                            <p class="mb-2"><strong>Defensoria Pública do Estado do Espírito Santo</strong> | <small>ago. 2024 - jan. 2026</small></p>
                             <p>Desenvolvimento de aplicações WEB, sustentação e manutenção de integrações e sistemas internos baseadas no ecossistema Python</p>
                         </div>
                         <div class="position-relative mb-4">
