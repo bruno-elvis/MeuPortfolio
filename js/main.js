@@ -339,6 +339,15 @@ function createMain(){
                             <p>Trabalho de conclusão de curso com ênfase em Ciência de Dados</p>
                         </div>
                     </div>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Pós Graduação em Inteligência Artificial e Aprendizagem das Máquinas
+</h5>
+                            <p class="mb-2"><strong>Faculdade do ES Multivix</strong> | <small>2025 - 2026</small></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4">Minhas Experiências</h3>
