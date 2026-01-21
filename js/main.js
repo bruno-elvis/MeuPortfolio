@@ -503,7 +503,9 @@ function createMain(){
     const paragrafo = document.querySelector('#sobre > div > div.row.align-items-center > div.col-lg-7 > p');
 
     botaoLerMais?.addEventListener('click', function () {
-        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = 'Criativo, automotivado, tenho autonomia no aprendizado, resiliente para situações e ambientes diversos. Tenho voracidade de aprender e fascínio em transformar informação em valor através da tecnologia.   Com mais de 5 anos de experiência com desenvolvimento FullStack na área da saúde e jurídica, trabalhei com projetos WEB, Desktop e Mobile em todo o ciclo de vida do projeto, desde o requisito de projeto ao deploy, atendendo clientes de referência internacional na América Latina, do setor público e privado. Possuo sólidos conhecimentos na linguagem JavaScript e seu ecossistema, assim como Java, Python e banco de dados relacionais e não relacionais.  Sigo ativo nas comunidades tech, e desenvolvo projeto pessoal na área de gestão de manutenção de motocicletas com aplicação de implementações com IA (SLM).';
+        if (paragrafo.innerHTML = '...')  paragrafo.innerHTML = `Tenho autonomia no aprendizado, resiliente para situações e ambientes diversos. Tenho voracidade de aprender e fascínio em transformar informação em valor através da tecnologia. Experiência sólida no desenvolvimento Web FullStack na área da saúde e jurídica, com desenvolvimento Desktop e Mobile em todo o ciclo de vida do projeto, desde o requisito de projeto ao deploy, atendendo clientes de referência internacional na América Latina, do setor público e privado. Possuo sólidos conhecimentos na linguagem JavaScript, Python, Java e seus ecossistemas, assim como banco de dados relacionais e não relacionais (PostgreSQL e Oracle). 
+
+Em paralelo, sigo ativo nas comunidades tech, e desenvolvo projeto pessoal na área de gestão de manutenção de motocicletas com aplicação de implementações com IA (SLM).`;
     });
 
     createBlogPosts();
